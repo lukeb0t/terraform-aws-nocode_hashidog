@@ -13,7 +13,7 @@ provider "doormat" {}
 data "doormat_aws_credentials" "creds" {
   provider = doormat
 
-  role_arn = "arn:aws:iam::325038557378:role/sample_dev-custom_role"
+  role_arn = "arn:aws:iam::325038557378:role/nocodetest1"
 }
 
 locals {
