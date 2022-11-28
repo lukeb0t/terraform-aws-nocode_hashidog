@@ -33,17 +33,15 @@ variable "placeholder" {
 
 variable "owner" {
   description = "resource owner"
-  default     = "George Jetson"
 }
 variable "prefix" {
   description = "This prefix will be included in the name of most resources."
-  default     = "hashidog"
 }
 
 variable "num_instances" {
-  default = 2
 }
 
 variable "ttl" {
+  description = "allowed time to live for the provisioned resources"
   default = "24"
 }
