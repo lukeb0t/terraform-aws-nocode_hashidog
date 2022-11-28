@@ -39,6 +39,7 @@ variable "prefix" {
 }
 
 variable "num_instances" {
+  description = "the number of hashidog webservers you want to deploy"
 }
 
 variable "ttl" {
