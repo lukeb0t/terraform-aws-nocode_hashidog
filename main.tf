@@ -20,7 +20,7 @@ locals {
   tags = {
     owner              = var.owner
     se-region          = "AMER-East E2",
-    purpose            = "Terraform Demo of AWS Ifra-as-code",
+    purpose            = "Terraform demo of TFC no-code provisioning",
     ttl                = var.ttl,
     terraform          = "true",
     hc-internet-facing = "true",
