@@ -12,7 +12,7 @@ default = ["10.10.1.0/24", "10.10.1.0/24"]
 }
 
 variable "instance_type" {
-  default = "t2.micro"
+  description = "choose from t3.micro, t3.small, t3.medium"
 }
 
 variable "height" {
