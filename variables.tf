@@ -45,3 +45,4 @@ variable "ttl" {
   description = "allowed time to live for the provisioned resources"
   default = "24"
 }
+

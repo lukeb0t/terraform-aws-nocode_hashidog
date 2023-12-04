@@ -28,6 +28,15 @@ resource "random_shuffle" "public_subnets" {
   result_count = 1
 }
 
+resource "aws_lb" "hashidog" {
+  name               = "hashidog"
+  load_balancer_type = "network"
+  
+subnet_mapping {
+    subnet_id            = random_shuffle.public_subnets.result[0]
+  }
+}
+
 resource "aws_instance" "hashidog" {
   count = var.num_instances
   ami                         = data.aws_ami.ubuntu.id
